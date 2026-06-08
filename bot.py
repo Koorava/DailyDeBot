@@ -57,7 +57,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "به ربات DailyDe خوش اومدی! 🎉\n\n"
         "آموزش روزانه زبان مثل آب خوردن!\n\n"
-        "چی میخوای؟:",
+        "چی نیاز داری؟:",
         reply_markup=reply_markup
     )
 
@@ -75,6 +75,33 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text(message, parse_mode="Markdown")
         else:
             await update.message.reply_text("در حال توسعه 🚧")
+    
+    elif text == "💬 اصطلاح روز":
+        await update.message.reply_text("در حال توسعه 🚧")
+    
+    elif text == "🎯 کوییز روز":
+        await update.message.reply_text("در حال توسعه 🚧")
+    
+    elif text == "📝 آزمون‌ها":
+        await update.message.reply_text("در حال توسعه 🚧")
+    
+    elif text == "📚 کتابخانه":
+        await update.message.reply_text("در حال توسعه 🚧")
+    
+    elif text == "📰 مجله‌ها":
+        await update.message.reply_text("در حال توسعه 🚧")
+    
+    elif text == "👤 پروفایل":
+        await update.message.reply_text("در حال توسعه 🚧")
+    
+    elif text == "⭐ ذخیره شده‌ها":
+        await update.message.reply_text("در حال توسعه 🚧")
+    
+    elif text == "🛡 پشتیبانی":
+        await update.message.reply_text("Contact under : @Firstmasoud")
+    
+    else:
+        await update.message.reply_text("لطفاً از دکمه‌های منو استفاده کنید :).")
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("/start - شروع\n/help - راهنما")
